@@ -263,13 +263,13 @@ local function Shared(self, unit)
 end
 
 ----------------------------------------------------------------------------------------
---	Default position of ShestakUI unitframes
+--	Default position of FugarUI unitframes
 ----------------------------------------------------------------------------------------
 oUF:Factory(function(self)
 	if SavedOptions == nil or SavedOptions.RaidLayout ~= "DPS" then return end
 
-	oUF:RegisterStyle("ShestakDPS", Shared)
-	oUF:SetActiveStyle("ShestakDPS")
+	oUF:RegisterStyle("FugaruDPS", Shared)
+	oUF:SetActiveStyle("FugaruDPS")
 	if C.raidframe.show_party == true then
 		-- Party
 		local party = self:SpawnHeader("oUF_PartyDPS", nil, "custom [@raid6,exists] hide;show",

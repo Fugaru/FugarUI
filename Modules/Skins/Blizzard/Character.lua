@@ -317,4 +317,4 @@ local function LoadSkin()
 	CharacterModelFrameBackgroundBotRight:SetPoint("BOTTOMRIGHT", CharacterModelFrame.backdrop, "BOTTOMRIGHT", -2, -50)
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)

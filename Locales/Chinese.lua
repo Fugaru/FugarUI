@@ -57,7 +57,7 @@ L_MISC_BUY_STACK = "Alt+右键点击购买一叠"
 L_MISC_ONECLICK_BUYOUT = "Shift+右键,不弹出确认框体直接购买"
 L_MISC_ONECLICK_BID = "Shift+右鍵,不弹出确认框体直接竞标"
 L_MISC_ONECLICK_CANCEL = "Shift+右键,不弹出确认框体直接取消选择的物品"
-L_MISC_UI_OUTDATED = "ShestakUI 版本已过期，请至 www.shestak.org 下载最新版"
+L_MISC_UI_OUTDATED = "FugarUI 版本已过期，请至 www.shestak.org 下载最新版"
 L_MISC_HEADER_MARK = "鼠标悬停显示团队图标"
 L_MISC_BINDER_OPEN = "鼠标绑定"
 L_MISC_GROCERY_BUY = "购买"
@@ -205,12 +205,12 @@ L_INFO_SKIN_DISABLED1 = "介面样式启用 "
 L_INFO_SKIN_DISABLED2 = " 已禁用."
 
 -- Popups
-L_POPUP_INSTALLUI = "该角色首次使用ShestakUI.你必须重新加载UI来配置."
-L_POPUP_RESETUI = "你确定要重新加载ShestakUI?"
+L_POPUP_INSTALLUI = "该角色首次使用FugarUI.你必须重新加载UI来配置."
+L_POPUP_RESETUI = "你确定要重新加载FugarUI?"
 L_POPUP_RESETSTATS = "你确定要重置本次游戏时间和金币收益统计数据?"
 L_POPUP_SWITCH_RAID = "选择团队布局."
 L_POPUP_DISBAND_RAID = "你确定要解散团队?"
-L_POPUP_DISABLEUI = "ShestakUI不支持此分辨率, 是否停用ShestakUI? (若调整其他分辨率,请按取消)"
+L_POPUP_DISABLEUI = "FugarUI不支持此分辨率, 是否停用FugarUI? (若调整其他分辨率,请按取消)"
 L_POPUP_SETTINGS_ALL = "套用所有插件设置? (DBM/DXE/Skada/MSBT)"
 L_POPUP_SETTINGS_DBM = "需要改变DBM锚点及样式元素."
 L_POPUP_SETTINGS_DXE = "需要改变DXE锚点及样式元素."
@@ -219,7 +219,7 @@ L_POPUP_ARMORY = "英雄榜"
 L_POPUP_CURRENCY_CAP = "你拥有的最高级货币为"
 
 -- Welcome message
-L_WELCOME_LINE_1 = "欢迎使用ShestakUI "
+L_WELCOME_LINE_1 = "欢迎使用FugarUI "
 L_WELCOME_LINE_2_1 = "输入/cfg进行插件设置,或者访问http://shestak.org"
 L_WELCOME_LINE_2_2 = "获取更多信息."
 
@@ -333,7 +333,7 @@ L_SLASHCMD_HELP = {
 	"/tt - 密语当前目标",
 	"/ainv - 开启/关闭 自动接受公会/好友组队邀请",
 	"/testuf - 头像框架测试模式",
-	"/cfg - 开启shestakui设置界面",
+	"/cfg - 开启FugarUI设置界面",
 }
 
 -- ExploreMap

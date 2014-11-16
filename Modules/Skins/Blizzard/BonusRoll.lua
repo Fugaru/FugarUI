@@ -32,4 +32,4 @@ local function LoadSkin()
 	BonusRollLootWonFrame.backdrop:SetPoint("BOTTOMRIGHT", BonusRollLootWonFrame, "BOTTOMRIGHT", 5, -6)
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)

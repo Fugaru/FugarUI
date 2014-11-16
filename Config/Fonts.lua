@@ -1,14 +1,14 @@
 ﻿local T, C, L, _ = unpack(select(2, ...))
 
 ----------------------------------------------------------------------------------------
---	ShestakUI fonts configuration file
+--	FugarUI fonts configuration file
 --	BACKUP THIS FILE BEFORE UPDATING!
 ----------------------------------------------------------------------------------------
 --	Configuration example:
 ----------------------------------------------------------------------------------------
 -- C["font"] = {
 --		-- Stats font
---		["stats_font"] = "Interface\\AddOns\\ShestakUI\\Media\\Fonts\\Normal.ttf",
+--		["stats_font"] = "Interface\\AddOns\\FugarUI\\Media\\Fonts\\Normal.ttf",
 -- 		["stats_font_size"] = 11,
 --		["stats_font_style"] = "",
 --		["stats_font_shadow"] = true,

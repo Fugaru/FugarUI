@@ -211,4 +211,4 @@ local function LoadSkin()
 	T.SkinDropDownBox(InterfaceOptionsLanguagesPanelLocaleDropDown, 250)
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)

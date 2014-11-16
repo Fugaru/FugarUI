@@ -1,8 +1,8 @@
 local T, C, L, _ = unpack(select(2, ...))
-if not IsAddOnLoaded("ShestakUI_Config") then return end
+if not IsAddOnLoaded("FugarUI_Config") then return end
 
 ----------------------------------------------------------------------------------------
---	This Module loads new user settings if ShestakUI_Config is loaded
+--	This Module loads new user settings if FugarUI_Config is loaded
 ----------------------------------------------------------------------------------------
 if not GUIConfigAll then GUIConfigAll = {} end
 if GUIConfigAll[T.realm] == nil then GUIConfigAll[T.realm] = {} end

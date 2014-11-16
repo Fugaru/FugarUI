@@ -7,7 +7,7 @@ if C.minimap.enable ~= true or C.minimap.toggle_menu ~= true then return end
 -- Override prefix method to collapse addons
 C["toggleprefix"] = {
 	["DBM"]			= "DBM-Core",
-	["ShestakUI"]	= "ShestakUI",
+	["FugarUI"]	= "FugarUI",
 	["Auc-"]		= "Auc-Advanced",
 	["!Swatter"]	= "Auc-Advanced",
 	["BeanCounter"]	= "Auc-Advanced",
@@ -140,7 +140,7 @@ C["toggleaddons"] = {
 		GatherMate2.db.profile["showWorldMap"] = not GatherMate2.db.profile["showWorldMap"]
 		GatherMate2:GetModule("Config"):UpdateConfig()
 	end,
-	["ShestakUI_Config"] = function()
+	["FugarUI_Config"] = function()
 		SlashCmdList.CONFIG()
 	end,
 	["Panda"] = function()

@@ -134,7 +134,7 @@ function Stuffing:SlotUpdate(b)
 	local clink = GetContainerItemLink(b.bag, b.slot)
 	local isQuestItem, questId = GetContainerItemQuestInfo(b.bag, b.slot)
 
-	-- Set all slot color to default ShestakUI on update
+	-- Set all slot color to default FugarUI on update
 	if not b.frame.lock then
 		b.frame:SetBackdropBorderColor(unpack(C.media.border_color))
 	end
@@ -860,7 +860,7 @@ function Stuffing:Layout(isBank)
 end
 
 function Stuffing:ADDON_LOADED(addon)
-	if addon ~= "ShestakUI" then return nil end
+	if addon ~= "FugarUI" then return nil end
 
 	self:RegisterEvent("BAG_UPDATE")
 	self:RegisterEvent("ITEM_LOCK_CHANGED")

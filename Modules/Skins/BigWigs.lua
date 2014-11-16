@@ -16,7 +16,7 @@ end
 
 local function freestyle(bar)
 	-- Reparent and hide bar background
-	local bg = bar:Get("bigwigs:shestakui:bg")
+	local bg = bar:Get("bigwigs:FugarUI:bg")
 	if bg then
 		bg:ClearAllPoints()
 		bg:SetParent(UIParent)
@@ -25,7 +25,7 @@ local function freestyle(bar)
 	end
 
 	-- Reparent and hide icon background
-	local ibg = bar:Get("bigwigs:shestakui:ibg")
+	local ibg = bar:Get("bigwigs:FugarUI:ibg")
 	if ibg then
 		ibg:ClearAllPoints()
 		ibg:SetParent(UIParent)
@@ -83,7 +83,7 @@ local applystyle = function(bar)
 	bg:SetPoint("BOTTOMRIGHT", bar, "BOTTOMRIGHT", 2, -2)
 	bg:SetFrameStrata("BACKGROUND")
 	bg:Show()
-	bar:Set("bigwigs:shestakui:bg", bg)
+	bar:Set("bigwigs:FugarUI:bg", bg)
 
 	-- Create or reparent and use icon background
 	local ibg = nil
@@ -99,7 +99,7 @@ local applystyle = function(bar)
 		ibg:SetPoint("BOTTOMRIGHT", bar.candyBarIconFrame, "BOTTOMRIGHT", 2, -2)
 		ibg:SetFrameStrata("BACKGROUND")
 		ibg:Show()
-		bar:Set("bigwigs:shestakui:ibg", ibg)
+		bar:Set("bigwigs:FugarUI:ibg", ibg)
 	end
 
 	-- Setup timer and bar name fonts and positions
@@ -138,17 +138,17 @@ local function registerStyle()
 	local bars = BigWigs:GetPlugin("Bars", true)
 	local prox = BigWigs:GetPlugin("Proximity", true)
 	if bars then
-		bars:RegisterBarStyle("ShestakUI", {
+		bars:RegisterBarStyle("FugarUI", {
 			apiVersion = 1,
 			version = 1,
 			GetSpacing = function(bar) return T.Scale(13) end,
 			ApplyStyle = applystyle,
 			BarStopped = freestyle,
-			GetStyleName = function() return "ShestakUI" end,
+			GetStyleName = function() return "FugarUI" end,
 		})
 	end
-	bars.defaultDB.barStyle = "ShestakUI"
-	if prox and bars.defaultDB.barStyle == "ShestakUI" then
+	bars.defaultDB.barStyle = "FugarUI"
+	if prox and bars.defaultDB.barStyle == "FugarUI" then
 		hooksecurefunc(prox, "RestyleWindow", function()
 			BigWigsProximityAnchor:SetTemplate("Transparent")
 		end)
@@ -176,7 +176,7 @@ StaticPopupDialogs.BW_TEST = {
 	OnAccept = function()
 		local bars = BigWigs and BigWigs:GetPlugin("Bars")
 		if bars then
-			bars.db.profile.barStyle = "ShestakUI"
+			bars.db.profile.barStyle = "FugarUI"
 			bars.db.profile.font = C.font.stylization_font
 			bars.db.profile.BigWigsAnchor_width = 185
 			bars.db.profile.BigWigsAnchor_x = 38

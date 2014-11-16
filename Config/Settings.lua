@@ -1,7 +1,7 @@
 ﻿local T, C, L, _ = unpack(select(2, ...))
 
 ----------------------------------------------------------------------------------------
---	ShestakUI main configuration file
+--	FugarUI main configuration file
 --	BACKUP THIS FILE BEFORE UPDATING!
 ----------------------------------------------------------------------------------------
 
@@ -9,17 +9,17 @@
 --	Media options
 ----------------------------------------------------------------------------------------
 C["media"] = {
-	["normal_font"] = [[Interface\AddOns\ShestakUI\Media\Fonts\Normal.ttf]],		-- Normal font
-	["blank_font"] = [[Interface\AddOns\ShestakUI\Media\Fonts\Blank.ttf]],			-- Blank font
-	["pixel_font"] = [[Interface\AddOns\ShestakUI\Media\Fonts\Pixel.ttf]],			-- Pixel font
+	["normal_font"] = [[Interface\AddOns\FugarUI\Media\Fonts\Normal.ttf]],		-- Normal font
+	["blank_font"] = [[Interface\AddOns\FugarUI\Media\Fonts\Blank.ttf]],			-- Blank font
+	["pixel_font"] = [[Interface\AddOns\FugarUI\Media\Fonts\Pixel.ttf]],			-- Pixel font
 	["pixel_font_style"] = "OUTLINEMONOCHROME",										-- Pixel font style("OUTLINEMONOCHROME" or "OUTLINE")
 	["pixel_font_size"] = 8,														-- Pixel font size for those places where it is not specified
-	["blank"] = [[Interface\AddOns\ShestakUI\Media\Textures\White.tga]],			-- Texture for borders
-	["texture"] = [[Interface\AddOns\ShestakUI\Media\Textures\Texture.tga]],		-- Texture for status bars
-	["highlight"] = [[Interface\AddOns\ShestakUI\Media\Textures\Highlight.tga]],	-- Texture for debuffs highlight
-	["whisp_sound"] = [[Interface\AddOns\ShestakUI\Media\Sounds\Whisper.ogg]],		-- Sound for whispers
-	["warning_sound"] = [[Interface\AddOns\ShestakUI\Media\Sounds\Warning.ogg]],	-- Sound for warning
-	["proc_sound"] = [[Interface\AddOns\ShestakUI\Media\Sounds\Proc.ogg]],			-- Sound for procs
+	["blank"] = [[Interface\AddOns\FugarUI\Media\Textures\White.tga]],			-- Texture for borders
+	["texture"] = [[Interface\AddOns\FugarUI\Media\Textures\Texture.tga]],		-- Texture for status bars
+	["highlight"] = [[Interface\AddOns\FugarUI\Media\Textures\Highlight.tga]],	-- Texture for debuffs highlight
+	["whisp_sound"] = [[Interface\AddOns\FugarUI\Media\Sounds\Whisper.ogg]],		-- Sound for whispers
+	["warning_sound"] = [[Interface\AddOns\FugarUI\Media\Sounds\Warning.ogg]],	-- Sound for warning
+	["proc_sound"] = [[Interface\AddOns\FugarUI\Media\Sounds\Proc.ogg]],			-- Sound for procs
 	["border_color"] = {0.37, 0.3, 0.3, 1},		-- Color for borders
 	["backdrop_color"] = {0, 0, 0, 1},			-- Color for borders backdrop
 	["overlay_color"] = {0, 0, 0, 0.7},			-- Color for action bars overlay

@@ -584,4 +584,4 @@ local function LoadSkin()
 	hooksecurefunc("AlertFrame_SetGarrisonFollowerAlertFrameAnchors", SkinGarrisonFollowerPopUp)
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)

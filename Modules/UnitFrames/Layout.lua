@@ -1263,9 +1263,9 @@ local function Shared(self, unit)
 end
 
 ----------------------------------------------------------------------------------------
---	Default position of ShestakUI unitframes
+--	Default position of FugarUI unitframes
 ----------------------------------------------------------------------------------------
-oUF:RegisterStyle("Shestak", Shared)
+oUF:RegisterStyle("Fugaru", Shared)
 
 local player = oUF:Spawn("player", "oUF_Player")
 player:SetPoint(unpack(C.position.unitframes.player))

@@ -438,7 +438,7 @@ local function LoadSkin()
 	T.SkinScrollBar(LFGListApplicationViewerScrollFrameScrollBar)
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)
 
 local function LoadSecondarySkin()
 	ChallengesFrameInset:StripTextures()

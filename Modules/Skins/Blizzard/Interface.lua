@@ -325,4 +325,4 @@ local function LoadSkin()
 	_G["InterfaceOptionsFrameTab2TabSpacer2"]:Kill()
 end
 
-tinsert(T.SkinFuncs["ShestakUI"], LoadSkin)
+tinsert(T.SkinFuncs["FugarUI"], LoadSkin)

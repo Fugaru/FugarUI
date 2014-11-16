@@ -205,7 +205,7 @@ local UploadMSBT = function()
 					},
 				},
 				["regenAbilitiesDisabled"] = true,
-				["critFontName"] = "ShestakUI",
+				["critFontName"] = "FugarUI",
 				["hotThrottleDuration"] = 5,
 				["critOutlineIndex"] = 2,
 				["animationSpeed"] = 140,
@@ -319,7 +319,7 @@ local UploadMSBT = function()
 				},
 				["cooldownThreshold"] = 60,
 				["hideNames"] = true,
-				["normalFontName"] = "ShestakUI",
+				["normalFontName"] = "FugarUI",
 				["healThreshold"] = 1000,
 				["qualityExclusions"] = {
 					true, -- [1]
@@ -329,7 +329,7 @@ local UploadMSBT = function()
 	}
 	MSBT_SavedMedia = {
 		["fonts"] = {
-			["ShestakUI"] = "Interface\\AddOns\\ShestakUI\\Media\\Fonts\\Pixel.ttf",
+			["FugarUI"] = "Interface\\AddOns\\FugarUI\\Media\\Fonts\\Pixel.ttf",
 		},
 		["sounds"] = {
 		},
