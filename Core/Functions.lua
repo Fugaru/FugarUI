@@ -506,6 +506,12 @@ T.PostUpdateHealth = function(health, unit, min, max)
 		end
 	else
 		local r, g, b
+		-- if UnitIsPlayer(unit) then
+			-- local _, class = UnitClass(unit)
+			-- if class then
+				-- local color = oUF.colors.class[class] 
+				-- health.bg:SetTexture(color[1]*.9, color[2]*.9, color[3]*.9, 0.9)
+			-- end
 		if (C.unitframe.own_color ~= true and C.unitframe.enemy_health_color and unit == "target" and UnitIsEnemy(unit, "player") and UnitIsPlayer(unit)) or (C.unitframe.own_color ~= true and unit == "target" and not UnitIsPlayer(unit) and UnitIsFriend(unit, "player")) then
 			local c = T.oUF_colors.reaction[UnitReaction(unit, "player")]
 			if c then

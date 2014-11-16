@@ -33,6 +33,7 @@ local function Shared(self, unit)
 	-- Backdrop for every units
 	self:CreateBackdrop("Default")
 	self:SetFrameStrata("BACKGROUND")
+	self:SetFrameLevel(5)
 
 	-- Health bar
 	self.Health = CreateFrame("StatusBar", self:GetName().."_Health", self)
@@ -43,9 +44,11 @@ local function Shared(self, unit)
 	else
 		self.Health:SetHeight(13)
 	end
-	self.Health:SetPoint("TOPLEFT", self, "TOPLEFT", 0, 0)
-	self.Health:SetPoint("TOPRIGHT", self, "TOPRIGHT", 0, 0)
+	self.Health:SetPoint("TOPLEFT", self, "TOPLEFT", 1, -1)
+	self.Health:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -1, 1)
 	self.Health:SetStatusBarTexture(C.media.texture)
+	-- self.Health:SetFrameLevel(5)
+	
 
 	self.Health.frequentUpdates = true
 	if C.unitframe.own_color == true then
@@ -68,12 +71,14 @@ local function Shared(self, unit)
 
 	-- Health bar background
 	self.Health.bg = self.Health:CreateTexture(nil, "BORDER")
-	self.Health.bg:SetAllPoints()
+	-- self.Health.bg:SetAllPoints()
+	self.Health.bg:SetPoint("TOPLEFT", self.Health, "TOPLEFT", -1, 1)
+	self.Health.bg:SetPoint("BOTTOMRIGHT", self.Health, "BOTTOMRIGHT", 1, -1)
 	self.Health.bg:SetTexture(C.media.texture)
 	if C.unitframe.own_color == true then
 		self.Health.bg:SetVertexColor(C.unitframe.uf_color[1], C.unitframe.uf_color[2], C.unitframe.uf_color[3], 0.2)
 	else
-		self.Health.bg.multiplier = 0.2
+		self.Health.bg.multiplier = 0.65
 	end
 
 	self.Health.value = T.SetFontString(self.Health, C.font.unit_frames_font, C.font.unit_frames_font_size, C.font.unit_frames_font_style)
@@ -112,9 +117,11 @@ local function Shared(self, unit)
 	else
 		self.Power:SetHeight(2)
 	end
-	self.Power:SetPoint("TOPLEFT", self.Health, "BOTTOMLEFT", 0, -1)
-	self.Power:SetPoint("TOPRIGHT", self.Health, "BOTTOMRIGHT", 0, -1)
+	self.Power:SetPoint("TOPLEFT", self, "BOTTOMLEFT", 0, -3)
+	self.Power:SetPoint("TOPRIGHT", self, "BOTTOMRIGHT", 0, -3)
 	self.Power:SetStatusBarTexture(C.media.texture)
+	self.Power:CreateBackdrop("Default")
+	self.Power:SetFrameLevel(5)
 
 	self.Power.frequentUpdates = true
 	self.Power.colorDisconnected = true
@@ -132,7 +139,8 @@ local function Shared(self, unit)
 	self.Power.PostUpdate = T.PostUpdatePower
 
 	self.Power.bg = self.Power:CreateTexture(nil, "BORDER")
-	self.Power.bg:SetAllPoints()
+	self.Power.bg:SetPoint("TOPLEFT", self.Power, "TOPLEFT", -1, 1)
+	self.Power.bg:SetPoint("BOTTOMRIGHT", self.Power, "BOTTOMRIGHT", 1, -1)
 	self.Power.bg:SetTexture(C.media.texture)
 	if C.unitframe.own_color == true and unit == "pet" then
 		self.Power.bg:SetVertexColor(C.unitframe.uf_color[1], C.unitframe.uf_color[2], C.unitframe.uf_color[3], 0.2)
@@ -225,11 +233,11 @@ local function Shared(self, unit)
 		end
 
 		-- Resting icon
-		if C.unitframe.icons_resting == true and T.level ~= MAX_PLAYER_LEVEL then
-			self.Resting = self.Power:CreateTexture(nil, "OVERLAY")
-			self.Resting:SetSize(18, 18)
-			self.Resting:SetPoint("BOTTOMLEFT", -8, -8)
-		end
+		-- if C.unitframe.icons_resting == true and T.level ~= MAX_PLAYER_LEVEL then
+			-- self.Resting = self.Power:CreateTexture(nil, "OVERLAY")
+			-- self.Resting:SetSize(18, 18)
+			-- self.Resting:SetPoint("BOTTOMLEFT", -8, -8)
+		-- end
 
 		-- Leader/Assistant/ML icons
 		if C.raidframe.icons_leader == true then
